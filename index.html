@@ -1,141 +1,93 @@
-!DOCTYPE html
-html lang=en
-head
-    meta charset=UTF-8
-    titlePasindu Gimhan  Network & Cyber Security Portfoliotitle
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    style
-        body {
-            font-family Arial, sans-serif;
-            margin 0;
-            background-color #0f172a;
-            color #e2e8f0;
-        }
-        header {
-            background #1e293b;
-            padding 30px;
-            text-align center;
-        }
-        header h1 {
-            margin 0;
-            font-size 32px;
-        }
-        header p {
-            margin-top 10px;
-            color #94a3b8;
-        }
-        section {
-            padding 40px 10%;
-        }
-        h2 {
-            border-bottom 2px solid #334155;
-            padding-bottom 10px;
-        }
-        .skills, .projects {
-            display grid;
-            grid-template-columns repeat(auto-fit, minmax(250px, 1fr));
-            gap 20px;
-        }
-        .card {
-            background #1e293b;
-            padding 20px;
-            border-radius 10px;
-        }
-        footer {
-            text-align center;
-            padding 20px;
-            background #1e293b;
-            color #94a3b8;
-        }
-        a {
-            color #38bdf8;
-            text-decoration none;
-        }
-    style
-head
-body
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pasindu Gimhan | Network & Cyber Security</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header
-    h1Pasindu Gimhanh1
-    pNetwork & Cyber Security Student  Hardware Technician  Future Tech Entrepreneurp
-header
+<header>
+    <div class="container">
+        <h1>Pasindu Gimhan</h1>
+        <p>Network & Cyber Security Student | Hardware Technician | Future Tech Entrepreneur</p>
+    </div>
+</header>
 
-section
-    h2About Meh2
-    p
-        I am a 21-year-old Network and Cyber Security student with a strong background in 
-        computer hardware and networking. I have hands-on experience in Active Directory, 
-        DHCP configuration, routing and switching, virtualization (ESXi), and CCTV installations. 
-        My goal is to build secure, scalable infrastructure solutions and grow into a cybersecurity specialist 
-        while developing my own technology startup.
-    p
-section
+<section class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a Network and Cyber Security student with hands-on experience in hardware,
+            networking, and virtualization. I specialize in Active Directory, DHCP,
+            routing & switching, ESXi virtualization, and building secure lab environments.
+            My long-term goal is to design secure and scalable infrastructure systems
+            while building my own technology startup.
+        </p>
+    </div>
+</section>
 
-section
-    h2Technical Skillsh2
-    div class=skills
-        div class=card
-            h3Networkingh3
-            pRouting & Switching, VLANs, IPv4IPv6, DHCP, DNS, Packet Tracer Labsp
-        div
-        div class=card
-            h3Systems & Virtualizationh3
-            pWindows Server, Active Directory, ESXi, Unraid, Virtual Lab Setupp
-        div
-        div class=card
-            h3Cyber Securityh3
-            pBasic Penetration Testing, Network Hardening, TryHackMe Labsp
-        div
-        div class=card
-            h3Hardwareh3
-            pPC Assembly, Troubleshooting, CCTV Installation, System Maintenancep
-        div
-    div
-section
+<section class="skills">
+    <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Networking</h3>
+                <p>Routing & Switching, VLANs, IPv4/IPv6, DHCP, DNS, Packet Tracer</p>
+            </div>
+            <div class="card">
+                <h3>Systems</h3>
+                <p>Windows Server, Active Directory, ESXi, Virtual Labs</p>
+            </div>
+            <div class="card">
+                <h3>Cyber Security</h3>
+                <p>Network Hardening, Basic Pen Testing, TryHackMe Labs</p>
+            </div>
+            <div class="card">
+                <h3>Hardware</h3>
+                <p>PC Assembly, Troubleshooting, CCTV Installation</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-section
-    h2Projectsh2
-    div class=projects
-        div class=card
-            h3Windows Server Deploymenth3
-            pInstalled and configured Active Directory, DHCP, and user management in a virtual lab environment.p
-        div
-        div class=card
-            h3Multi-Router Network Designh3
-            pDesigned and configured a multi-router topology with IPv4 & IPv6 addressing in Packet Tracer.p
-        div
-        div class=card
-            h3Virtualized Lab Environmenth3
-            pBuilt a personal testing lab using ESXi to simulate enterprise network infrastructure.p
-        div
-        div class=card
-            h3CCTV Installation Projecth3
-            pInstalled and configured surveillance systems including camera setup and network integration.p
-        div
-    div
-section
+<section class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Windows Server Deployment</h3>
+                <p>Configured Active Directory, DHCP and user management in a virtual lab.</p>
+            </div>
+            <div class="card">
+                <h3>Multi-Router Topology</h3>
+                <p>Designed IPv4 & IPv6 network topology using Cisco Packet Tracer.</p>
+            </div>
+            <div class="card">
+                <h3>Virtual Infrastructure Lab</h3>
+                <p>Built ESXi-based lab to simulate enterprise network environment.</p>
+            </div>
+            <div class="card">
+                <h3>CCTV Network Setup</h3>
+                <p>Installed and integrated IP-based surveillance system.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-section
-    h2Educationh2
-    p
-        Higher National Diploma (HND) in Network & Cyber Securitybr
-        Vocational Training in Computer Hardware & Networkingbr
-        6-Month Internship as Hardware Technician
-    p
-section
+<section class="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: github.com/yourusername</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
 
-section
-    h2Contacth2
-    p
-        Email your-email@example.combr
-        LinkedIn a href=#Your LinkedIn Profileabr
-        GitHub a href=#Your GitHub Profilea
-    p
-section
+<footer>
+    <p>© 2026 Pasindu Gimhan | Secure Infrastructure Builder</p>
+</footer>
 
-footer
-    © 2026 Pasindu Gimhan  Building Secure Digital Infrastructure
-footer
-
-body
-html
+</body>
+</html>
