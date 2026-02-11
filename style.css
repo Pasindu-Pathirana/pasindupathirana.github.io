@@ -12,6 +12,60 @@ body {
     padding: 40px 0;
 }
 
+.cv-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.cv-view {
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+    margin-left: 150px;
+}
+.cv-download {
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+
+}
+
+/* View Button */
+.cv-view {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.cv-view:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* Download Button */
+.cv-download {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.cv-download:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+
 /* Header */
 header {
     background: #1e293b;
