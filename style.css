@@ -26,6 +26,8 @@ a {
     opacity: 0;
     animation: show-content 0.5s linear forwards;
     animation-delay: 0.5s;
+    background-color: #0f172a;
+   
 }
 
 @keyframes show-content {
@@ -75,19 +77,25 @@ body {
 }
 
 body {
-    background-color: #0d1117;
+    background-color: #0f172a;
 }
 
 
 
 .container1 {
+    position: relative;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* This moves photo right, text left */
-    align-items: center; /* This keeps them perfectly parallel/aligned */
+    justify-content: space-between;
+    align-items: center;
+    background: url("bgimage.png") no-repeat;  
+    background-size: cover;
+    background-position: center 30px; /* moved down */
+    
 }
+
 
 .text-group {
     text-align: left;
@@ -96,31 +104,59 @@ body {
 
 .text-group h1 {
     font-size: 2.8rem;
+    
     margin-bottom: 8px;
 }
 
 .home-info h1 {
     font-size: 55px;
     padding-bottom: 30px;
+    position: relative;
 }
 
 .home-info h2 {
+    display: inline-block;
     font-size: 32px;
     margin-top: -10px;
+    
+    
+    
 }
 
 .home-info h2 span {
+    position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: .7px #00b3ff;
-    animation: display;
+    -webkit-text-stroke: .7px #4bc6ff;
+    animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
-
 @keyframes display-text {
-    25%,
-    100% {
+    25%,100% {
         display: none;
+    }
+}
+
+.home-info h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #4bc6ff;
+    color: #4bc6ff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+
+}
+
+@keyframes fill-text {
+    10%,
+    100% {
+        width: 0;
+    }
+    70%,
+    90% {
+        width: 100%;
     }
 }
 
@@ -128,8 +164,8 @@ body {
 
 
 .profile-circle img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -151,7 +187,7 @@ body {
 .container {
     width: 85%;
     margin: auto;
-    padding: 40px 0;
+    padding-bottom: 30px;
 }
 
 .cv-actions {
@@ -210,7 +246,7 @@ body {
 
 /* Header */
 header {
-    background: #1e293b;
+    background: #0f172a;
     text-align: center;
     padding: 60px 0;
 }
